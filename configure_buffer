@@ -1,0 +1,5 @@
+#! /usr/bin/env bash
+
+cd /Applications/MATLAB_R2010a.app/bin
+
+./matlab -maci -nodesktop -nosplash -r "addpath(genpath('~/bci_code/toolboxes/brainstream')); addpath(genpath('~/bci_code/own_experiments/visual/neglect_project/FRP_recancellation/experiment')); configure_eyelink_fieldtrip_buffer;"

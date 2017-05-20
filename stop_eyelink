@@ -1,0 +1,5 @@
+#! /usr/bin/env bash
+
+cd /Applications/MATLAB_R2010a.app/bin
+
+./matlab -maci -nodesktop -nosplash -r "addpath(genpath('~/bci_code/toolboxes/brainstream/')); addpath(genpath('~/bci_code/external_toolboxes/fieldtrip/')); addpath(genpath('~/bci_code/own_experiments/visual/neglect_project/FRP_stimtypes/experiment_files/')); ft_write_event('buffer://localhost:1971',struct('type','_DS_STOP','sample',0,'value',msserialize([]),'offset',0,'duration',0));"
